@@ -1,0 +1,140 @@
+[
+  {
+    "ContainingType": "Csharp_Cumulative_Assignment_1.Controllers.TeacherAPIController",
+    "Method": "CourseInfo",
+    "RelativePath": "api/TeacherAPI/CourseInfo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Csharp_Cumulative_Assignment_1.Models.Course",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Csharp_Cumulative_Assignment_1.Controllers.TeacherAPIController",
+    "Method": "Lcourses",
+    "RelativePath": "api/TeacherAPI/LCourses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Csharp_Cumulative_Assignment_1.Models.Course, Csharp-Cumulative-Assignment-1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Csharp_Cumulative_Assignment_1.Controllers.TeacherAPIController",
+    "Method": "LStudents",
+    "RelativePath": "api/TeacherAPI/LStudents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Csharp_Cumulative_Assignment_1.Models.Student, Csharp-Cumulative-Assignment-1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Csharp_Cumulative_Assignment_1.Controllers.TeacherAPIController",
+    "Method": "LTeachers",
+    "RelativePath": "api/TeacherAPI/LTeachers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Csharp_Cumulative_Assignment_1.Models.Teacher, Csharp-Cumulative-Assignment-1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Csharp_Cumulative_Assignment_1.Controllers.TeacherAPIController",
+    "Method": "StudentInfo",
+    "RelativePath": "api/TeacherAPI/StudentInfo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Csharp_Cumulative_Assignment_1.Models.Student",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Csharp_Cumulative_Assignment_1.Controllers.TeacherAPIController",
+    "Method": "TeacherInfo",
+    "RelativePath": "api/TeacherAPI/TeacherInfo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Csharp_Cumulative_Assignment_1.Models.Teacher",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
