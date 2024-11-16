@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dance Blog</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-heading">
+      <img src="logo/happy.png" alt="Logo" class="logo">
+      <h1 class="heading">Dancing Through Life</h1>
+  </div>
+
+    <nav>
+      <ul>
+        <li><a href="#" target="_self">HOME</a></li>
+        <li class="divider">|</li>
+        <li><a href="#" target="_self">Dance Style</a></li>
+        <li class="divider">|</li>
+        <li><a href="#">About Me</a></li>
+        <li class="divider">|</li>
+        <li><a href="#">Contact</a></li>
+        <li class="divider">|</li>
+      </ul>
+    </nav>
+    <div class="social-icons">
+      <a href="#"><img src="logo/instagram.png" alt="Instagram"></a> <!--https://www.flaticon.com/free-icons/logo-->
+      <a href="#"><img src="logo/facebook.png" alt="Facebook"></a>   <!--https://www.flaticon.com/free-icons/logo-->
+      <a href="#"><img src="logo/pinterest.png" alt="Pintrest"></a>  <!--https://www.flaticon.com/free-icons/logo-->
+    </div>
+  </header>
+
+  <body>
+    <div class="container">
+      <aside>
+        <h1>Costumes</h1>
+        <div class="wear-container">
+            <div class="wear-img">
+                <img src="./item1.jpg" alt="Costume-1" width="100%">
+            </div>
+            <div class="wear-data">
+                <p>Kathak ghungroos are a set of small metallic bells tied around a dancer's ankles, 
+                    traditionally used in classical Indian dance to emphasize rhythmic footwork and movements. 
+                    They are integral to the dance, 
+                    accentuating beats and adding to the performance's auditory appeal.
+                </p>
+            </div>
+        </div>
+        <div class="wear-container">
+            <div class="wear-img">
+                <img src="./item2.jpg" alt="Costume-2" width="100%">
+            </div>
+            <div class="wear-data">
+                <p>A ballet dress, often called a tutu, is a lightweight, 
+                    fitted costume typically made of tulle, designed to allow freedom of movement 
+                    while showcasing the grace and precision of a ballet dancer's movements. 
+                    It is iconic for its structured skirt and elegant style.
+                </p>
+            </div>
+        </div>
+        <div class="wear-container">
+            <div class="wear-img">
+                <img src="./item3.jpg" alt="Costume-3" width="100%">
+            </div>
+            <div class="wear-data">
+                <p>Ballet shoes are lightweight, flexible footwear designed to support a dancer's feet,
+                    providing balance and allowing smooth, graceful movements.
+                    They are usually made from soft leather, satin, or canvas, 
+                    with thin soles for close contact with the floor.
+                </p>
+            </div>
+        </div>
+      </aside>
+      <section>
+        <div class="blog-head">
+          <h1>
+            Dancing Through Life: Express your emotions through Dance
+          </h1>
+
+        </div>
+
+        <div class="kathak-container">
+          <div class="kathak">
+            <div class="kathak-image">
+              <img src="images/kathak.jpg.crdownload"  width="380px" height="320px"  alt="Kathak Dancers">
+            </div>
+            <div class="kathak-content">
+              Kathak is a classical dance form originating from northern India, known for its intricate footwork, expressive facial gestures, and fast spins. It combines rhythmic movements with storytelling, often depicting ancient tales from Indian mythology. Dancers wear ankle bells (ghungroos) to accentuate their steps, coordinating with complex rhythmic patterns. Kathak is deeply rooted in both Hindu and Persian traditions, making it a unique blend of cultural influences. It is performed both as a solo dance and in group performances, often accompanied by classical music and poetry.
+            </div>
+          </div>
+        </div>
+
+        <div class="ballet-container">
+          <div class="ballet">
+            <div class="ballet-image">
+              <img src="images/indonasion dance.jpg" width="330px" height="400px" alt="Ballet Dancers">
+
+            </div>
+            <div class="ballet-content">
+              Ballet is a classical dance form known for its elegance and technical precision. Originating in the Italian Renaissance, it emphasizes formalized steps and graceful movements. Dancers often wear tutus and pointe shoes, showcasing a range of emotions and narratives through intricate choreography. Ballet combines artistry with rigorous training, making it a highly respected and influential dance style.
+            </div>
+          </div>
+        </div>
+
+        <div class="give-comments">
+          <div class="comment-head">
+            <h2>
+              Leave us a Comment!
+            </h2>
+            <div class="name-comment">
+              <form>
+                <label for="first-name" >First name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Dhruvi"> 
+                <label for="last-name" id="label-lname">Last name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Shah"> 
+              </form>
+            </div>
+            <div class="email-comment">
+              <form>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="isha7784shah@gmail.com">
+              </form>
+            </div>
+            <div class="message-comment">
+              <form>
+                <label for="msg">Message*</label>
+                <textarea id="msg" name="msg" cols="80" rows="8" placeholder="I love dance!"></textarea>
+              </form>
+            </div>
+            <div class="rate-blog">
+              <form>
+                <fieldset id="rate-this">
+                    <legend><strong>Rate This Blog</strong></legend>
+                    <input type="radio" id="rate-1" name="rating">
+                    <label for="rate-1">1</label>
+                    
+                    <input type="radio" id="rate-2" name="rating">
+                    <label for="rate-2">2</label>
+                    
+                    <input type="radio" id="rate-3" name="rating">
+                    <label for="rate-3">3</label>
+                    
+                    <input type="radio" id="rate-4" name="rating">
+                    <label for="rate-4">4</label>
+                    
+                    <input type="radio" id="rate-5" name="rating" checked="checked">
+                    <label for="rate-5">5</label>
+
+                                    
+                <div class="submit-rate">
+                  <button type="submit" id="submit-rating">Submit</button>
+                </div>
+
+                </fieldset>
+
+            </form>
+            </div>
+
+          </div>
+          <div>
+
+          </div>
+
+        </div>
+
+
+      </section>
+    </div>
+    
+
+  </body>
+
+
+
+
+
+
+
+
+
+
+  <footer>
+
+  </footer>
