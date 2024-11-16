@@ -1,0 +1,24 @@
+﻿@model Cumulative_1.Models.Student
+
+
+<!-- Displaying all the details of Selected teacher from list.cshtml on this webpage  -->
+
+<h1 class="selected">@Model.S_FName @Model.S_LName</h1>
+<p>Student Number : @Model.S_Num.ToString()</p>
+<p>Enrollment Date : @Model.S_E_Date.ToString("yyyy-M-d")</p>
+
+<style>
+    main{
+        background: #eee;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+        box-shadow: 2px 2px 4px grey;
+    }
+    .selected{
+        margin-bottom: 10px;
+    }
+
+</style>
