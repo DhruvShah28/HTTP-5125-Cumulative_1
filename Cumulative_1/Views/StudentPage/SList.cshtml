@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Cumulative_1.Models.Student>
+
+
+<!-- Displaying all the Student (first name and last name) on the webpage as link where you can select any teacher for their further details -->
+@foreach (Cumulative_1.Models.Student Student in Model)
+{
+    <div class="list">
+        <a href="/StudentPage/SShow/@Student.S_Id">@Student.S_FName @Student.S_LName</a>
+    </div>
+}
+
+<style>
+    .list{
+        display:flex;
+        margin-bottom:10px;
+    }
+    .list a{
+        color: #000;
+        text-decoration: none;
+        background: #eee;
+        padding:10px;
+        box-shadow: 2px 2px 4px grey;
+    }
+    .list a:hover{
+        color: #fff;
+        background: #aaa;
+        box-shadow: 1px 1px 3px grey;
+    }
+</style>
