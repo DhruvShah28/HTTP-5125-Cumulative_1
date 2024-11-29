@@ -1,0 +1,43 @@
+﻿<!-- This is a form that contains all the inouts required to add a new course -->
+﻿<div id="container">
+
+    <nav>
+        <!-- A link to go back to the list of all courses -->
+        <a class="navlink" href="/CoursePage/CList">Back To Courses</a>
+    </nav>
+
+    <h2>Add a New Course</h2>
+
+    <!-- Here, action is not directing to another web page but just creating the course and adding it to database -->
+    <!-- Method is post because we don't want the details of the course to be part of the URL -->
+    <form method="POST" action="/CoursePage/CreateCourse">
+        <div class="inputrow">
+            <label for="Course_Name">Name:</label>
+            <input type="text" id="Course_Name" name="Course_Name" />
+
+        </div>
+        <div class="inputrow">
+            <label for="Course_Code">Course Code:</label>
+            <input type="text" id="Course_Code" name="Course_Code" />
+
+        </div>
+        <div class="inputrow">
+            <label for="Teacher_Id">Teacher Id:</label>
+            <input type="number" id="Teacher_Id" name="Teacher_Id" />
+
+        </div>
+        <div class="inputrow">
+            <label for="C_Start_Date">Start Date: </label>
+            <input type="date" id="C_Start_Date" name="C_Start_Date" />
+
+        </div>
+        <div class="inputrow">
+            <label for="C_End_Date">Finish Date: </label>
+            <input type="date" id="C_End_Date" name="C_End_Date" />
+
+        </div>
+        <div class="inputrow">
+            <input type="submit" value="Create Course" />
+        </div>
+    </form>
+</div>
