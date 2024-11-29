@@ -1,0 +1,38 @@
+﻿<!-- This is a form that contains all the inouts required to add a new student -->
+﻿<div id="container">
+
+    <nav>
+        <!-- A link to go back to the list of all students -->
+        <a class="navlink" href="/StudentPage/ListStudent">Back To Students</a>
+    </nav>
+
+    <h2>Add a New Student</h2>
+
+    <!-- Here, action is not directing to another web page but just creating the student and adding it to database -->
+    <!-- Method is post because we don't want the details of the student to be part of the URL -->
+    <form method="POST" action="/StudentPage/CreateStudent">
+        <div class="inputrow">
+            <label for="First_Name">First Name:</label>
+            <input type="text" id="First_Name" name="First_Name" />
+
+        </div>
+        <div class="inputrow">
+            <label for="Last_Name">Last Name:</label>
+            <input type="text" id="Last_Name" name="Last_Name" />
+
+        </div>
+        <div class="inputrow">
+            <label for="Student_Num">Student Number:</label>
+            <input type="text" id="Student_Num" name="Student_Num" />
+
+        </div>
+        <div class="inputrow">
+            <label for="S_Enroll_Date">Enrolment Date:</label>
+            <input type="date" id="S_Enroll_Date" name="S_Enroll_Date" />
+
+        </div>
+        <div class="inputrow">
+            <input type="submit" value="Create Student" />
+        </div>
+    </form>
+</div>
