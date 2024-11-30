@@ -1,0 +1,52 @@
+﻿@model Cumulative_1.Models.Student
+
+<!-- New Added link "Back to List" redirects you to go back to the list page
+ and the Other link "Delete" will redirect to another "Delete confirm" web page
+ to confirm if we wanted to delete that teacher permanently from our database -->
+<div class="links">
+
+    <a href="/StudentPage/SList">Back to List</a>
+
+    <a class="alert-warning" href="/StudentPage/S_DeleteConfirm/@Model.Student_Id">Delete</a>
+</div>
+
+
+<!-- Displaying all the details of Selected Student from list.cshtml on this webpage  -->
+
+<h1 class="selected">@Model.First_Name @Model.Last_Name</h1>
+<p>Student Number : @Model.Student_Num.ToString()</p>
+<p>Enrollment Date : @Model.S_Enroll_Date.ToString("yyyy-M-d")</p>
+
+<style>
+    .links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .links a {
+        background: transparent;
+        font-size: 18px;
+        color: black;
+        text-decoration: none;
+    }
+
+            .links a:hover {
+                color: blue;
+            }
+    main{
+        background: #eee;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+        box-shadow: 2px 2px 4px grey;
+    }
+    .selected{
+        margin-bottom: 10px;
+    }
+
+</style>

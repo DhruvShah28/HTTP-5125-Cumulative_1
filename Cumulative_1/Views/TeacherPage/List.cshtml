@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Cumulative_1.Models.Teacher>
+
+
+<!-- A link is added that will redirect to another Form page where there is a form to add a new teacher-->
+<div class="course">
+    <h1>List Of Teachers</h1>
+    <a style="margin-bottom:10px;" href="/TeacherPage/New">Add Teacher</a>
+</div>
+
+
+<!-- Displaying all the teachers (first name and last name) on the webpage as link where you can select any teacher for their further details -->
+@foreach (Cumulative_1.Models.Teacher Teacher in Model)
+{
+    <div class="list">
+        <a href="/TeacherPage/Show/@Teacher.Teacher_Id">@Teacher.First_Name @Teacher.Last_Name</a>
+    </div>
+}
+
+<style>
+    .course {
+        margin-bottom: 20px;
+    }
+
+    .addlink {
+        font-size: 20px;
+    }
+
+    .list {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+        .list a {
+            color: #000;
+            text-decoration: none;
+            background: #eee;
+            padding: 10px;
+            box-shadow: 2px 2px 4px grey;
+            min-width: 200px;
+            text-align: center;
+        }
+
+            .list a:hover {
+                color: #fff;
+                background: #aaa;
+                box-shadow: 1px 1px 3px grey;
+            }
+
+    .imp {
+        font-size: 1.25em;
+    }
+</style>
+
