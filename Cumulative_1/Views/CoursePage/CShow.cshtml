@@ -1,0 +1,50 @@
+﻿@model Cumulative_1.Models.Course
+
+
+<!-- Displaying all the details of Selected teacher from list.cshtml on this webpage  -->
+
+<div class="links">
+    <a href="/CoursePage/CList">Go Back to List</a>
+    <a href="/CoursePage/C_Edit/@Model.Course_Id">Edit</a>
+    <a class="alert-warning" href="/CoursePage/C_DeleteConfirm/@Model.Course_Id">Delete</a>
+</div>
+
+
+<h1 class="selected">@Model.Course_Id @Model.Course_Name.ToString()</h1>
+<p>Course Code: @Model.Course_Code</p>
+<p>Teacher Id : @Model.Teacher_Id</p>
+<p>Start Date : @Model.C_Start_Date.ToString("yyyy-M-d")</p>
+<p>End Date : @Model.C_End_Date.ToString("yyyy-M-d")</p>
+
+<style>
+    .links{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
+    .links a{
+        background-color: transparent;
+        font-size: 18px;
+        color: black;
+        text-decoration: none;
+    }
+
+        .links a:hover {
+            color: blue;
+        }
+    main{
+        background: #eee;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+        box-shadow: 2px 2px 4px grey;
+    }
+    .selected{
+        margin-bottom: 10px;
+    }
+
+</style>

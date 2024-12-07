@@ -1,0 +1,40 @@
+﻿@model Cumulative_1.Models.Student
+
+<!-- This web page displays the question if user wants to delete the student permanently from the database -->
+
+<div id="container">
+
+    <div class="course">
+        <!-- A link to go back to the list of all Student -->
+        <a class="navlink" href="/StudentPage/SShow/@Model.Student_Id">Cancel</a>
+    </div>
+
+    <h2>Are you sure you want to delete @Model.First_Name @Model.Last_Name?</h2>
+    <p>This action cannot be <span class="imp">undone</span>.</p>
+
+    <!-- This button permanently deletes the student from the database, it will not direct you to any webpage -->
+    <form method="POST" action="/StudentPage/DeleteStudent/@Model.Student_Id">
+        <button class="warning-button">
+            Confirm Delete
+        </button>
+    </form>
+
+</div>
+
+<style>
+    .container {
+        display: flex;
+    }
+
+    .course {
+        margin-bottom: 20px;
+    }
+
+    .addlink {
+        font-size: 20px;
+    }
+    .imp{
+        color: red;
+        font-size: 1.5em;
+    }
+</style>

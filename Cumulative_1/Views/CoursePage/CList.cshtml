@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Cumulative_1.Models.Course>
+
+    <div class="course">
+        <h2>Courses We Offer: </h2>
+    <!-- Displaying all the Course on the webpage as link where you can select any teacher for their further details -->
+    <a class="addlink" href="/CoursePage/C_New">Add a Course</a>
+    </div>
+
+@foreach (Cumulative_1.Models.Course Course in Model)
+{
+    <div class="list">
+        <a href="/CoursePage/CShow/@Course.Course_Id">@Course.Course_Code <span class="imp"> @Course.Course_Name</span> </a>
+    </div>
+}
+
+<style>
+    .course{
+        margin-bottom: 20px;
+    }
+    .addlink{
+        font-size: 20px;
+    }
+    .list{
+        display:flex;
+        margin-bottom:10px;
+    }
+    .list a{
+        color: #000;
+        text-decoration: none;
+        background: #eee;
+        padding:10px;
+        box-shadow: 2px 2px 4px grey;
+        min-width: 450px;
+        text-align: center;
+    }
+    .list a:hover{
+        color: #fff;
+        background: #aaa;
+        box-shadow: 1px 1px 3px grey;
+    }
+    .imp{
+        font-size: 1.25em;
+    }
+</style>
